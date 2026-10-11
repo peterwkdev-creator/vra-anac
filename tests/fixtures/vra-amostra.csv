@@ -1,0 +1,9 @@
+﻿Atualizado em: 2026-08-28
+"ICAO Empresa Aérea";"Número Voo";"Código Autorização (DI)";"Código Tipo Linha";"ICAO Aeródromo Origem";"ICAO Aeródromo Destino";"Partida Prevista";"Partida Real";"Chegada Prevista";"Chegada Real";"Situação Voo";"Código Justificativa"
+"GLO";"1015";"0";"N";"SBRJ";"SBSP";"2026-07-18 10:30:00";"2026-07-18 10:24:00";"2026-07-18 11:35:00";"2026-07-18 11:20:00";"REALIZADO";"N/A"
+"GLO";"1016";"0";"N";"SBSP";"SBRJ";"2026-07-23 11:35:00";"2026-07-23 12:39:00";"2026-07-23 12:40:00";"2026-07-23 13:36:00";"REALIZADO";"N/A"
+"AZU";"4317";"0";"N";"SBCF";"SBIP";"2026-07-17 16:55:00.100000000";"2026-07-17 18:23:00";"2026-07-17 17:40:00.100000000";"2026-07-17 19:05:00";"REALIZADO";"N/A"
+"GLO";"1016";"0";"N";"SBSP";"SBRJ";"2026-07-15 11:35:00";"null";"2026-07-15 12:40:00";"null";"CANCELADO";"N/A"
+"ETH";"Z0506";"4";"I";"HAAB";"FKYS";"null";"2026-07-17 04:17:00";"null";"2026-07-17 08:43:00";"REALIZADO";"N/A"
+"LAN";"0506";"0";"I";"SCEL";"SBFL";"2026-07-01 18:55:00";"2026-07-01 18:50:00";"2026-07-01 22:10:00";"2026-07-01 22:04:00";"REALIZADO";"N/A"
+"GLO";"1756";"0";"N";"SBPV";"SBEG";"2026-08-01 00:30:00";"2026-08-01 01:18:00";"2026-08-01 01:55:00";"2026-08-01 02:31:00";"REALIZADO";"N/A"

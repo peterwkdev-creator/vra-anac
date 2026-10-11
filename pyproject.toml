@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vra-anac"
+# A versão tem uma fonte só: o __version__ do pacote (lido sem importar).
+dynamic = ["version"]
+# Uma frase só, até 100 caracteres (teto do catálogo MCP): a mesma no About
+# do GitHub (gh repo edit --description) e no server.json, se houver.
+description = "Pontualidade dos voos domésticos do Brasil pelo VRA da ANAC: lê o CSV do mês e calcula o indicador"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Peter" }]
+requires-python = ">=3.11"
+dependencies = []
+keywords = ["anac", "vra", "aviacao", "voos", "pontualidade", "atrasos", "dados-abertos", "brasil"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+# sem vitrine (Pages) na 0.1: a página inicial é o próprio repositório
+# (nomes que o PyPI reconhece)
+[project.urls]
+Homepage = "https://github.com/peterwkdev-creator/vra-anac"
+Source = "https://github.com/peterwkdev-creator/vra-anac"
+Issues = "https://github.com/peterwkdev-creator/vra-anac/issues"
+Changelog = "https://github.com/peterwkdev-creator/vra-anac/blob/main/CHANGELOG.md"
+
+# o comando que o pip instala no PATH, além do `python -m vra_anac`
+[project.scripts]
+vra-anac = "vra_anac.__main__:main"
+
+[tool.setuptools]
+# a pasta das tabelas entra aqui também: sem isto, o setuptools avisa que a
+# vê como pacote e não sabe se é para levar
+packages = ["vra_anac", "vra_anac.dados"]
+
+# as tabelas de companhias e aeroportos só vão na instalação se estiverem
+# aqui; sem isto, FileNotFoundError fora do checkout.
+[tool.setuptools.package-data]
+vra_anac = ["dados/*.csv"]
+
+[tool.setuptools.dynamic]
+version = { attr = "vra_anac.__version__" }

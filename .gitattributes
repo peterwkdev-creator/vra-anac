@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# a amostra do VRA vai com os bytes do arquivo da ANAC (BOM e CRLF)
+tests/fixtures/*.csv binary
